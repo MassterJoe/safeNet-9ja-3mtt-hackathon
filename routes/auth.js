@@ -22,7 +22,7 @@ const sendEmail = async (to, subject, text, html) => {
     to,
     from: {
       email: process.env.SENDGRID_SENDER_EMAIL, // Verified sender email
-      name: "AlertMe 9Ja Team", // Optional sender name
+      name: "SafeNet 9Ja Team", // Optional sender name
     },
     subject,
     text,
@@ -93,7 +93,7 @@ router.post("/signup", upload.none(), async (req, res) => {
       posts: [],
     });
 
-    const subject = "Welcome to AlertMe 9Ja!";
+    const subject = "Welcome to SafeNet 9Ja!";
     const text = `Hello ${name},\n\nWelcome to AlertMe 9Ja! We're excited to have you on board.\n\nBest Regards,\nAlertMe 9Ja Team`;
     const html = `<p>Hello <strong>${name}</strong>,</p>
                       <p>Welcome to <strong>AlertMe 9Ja</strong>! We're excited to have you on board.</p>
